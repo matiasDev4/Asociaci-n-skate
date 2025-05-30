@@ -10,7 +10,7 @@ export const Inicio = () =>{
                     </h1>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScYnVFsR6gpCCltEfZiT8zu7kHTyyw4dBTiStUGcpCGv1gHFw/viewform?usp=sf_link" target="_blank" className="bg-red-600 w-60 lg:w-full text-xl lg:text-2xl py-1 lg:py-2 rounded-md font-title font-bold
                     hover:cursor-pointer hover:bg-red-500 my-2 shadow-[0px_10px_15px_black]/50 transition-all duration-300
-                    hover:translate-y-[-5px]">Hacete socio</a>
+                    hover:translate-y-[-5px] text-center">Hacete socio</a>
                 </div>
             </div>
             <p className="text-lg border-y-1 py-4 font-bubes my-4 px-2 lg:text-5xl">hagamos crecer el deporte en san vicente</p>
