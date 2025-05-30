@@ -10,7 +10,7 @@ import { Nosotros } from "./components/Nosotros"
 
 export const App = () =>{
     return (
-        <section className="w-full h-full ">
+        <section className="w-full h-full scroll-smooth">
             <Header />
             <Inicio />
             <Nosotros />

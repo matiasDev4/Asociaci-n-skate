@@ -4,7 +4,7 @@ import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 
 export const Header = () =>{
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
     const [activeClick, setActiveClick] = useState('')
 
     return (

@@ -1,4 +1,5 @@
 import { IoLogoWhatsapp } from "react-icons/io";
+import { FaSquareInstagram } from "react-icons/fa6";
 
 export const Clases = () =>{
     return (
@@ -20,9 +21,9 @@ export const Clases = () =>{
                         <h3 className="bg-white px-4 text-black font-semibold rounded-lg text-lg lg:text-xl">Juan Rios</h3>
                     </div>
                     <div className="px-5 py-5">
-                        <button className="bg-green-600 w-full py-2 text-lg font-bold text-white rounded-md flex items-center justify-center gap-x-2
+                        <a href="http://wa.me/+5492224532193" className="bg-green-600 w-full py-2 text-lg font-bold text-white rounded-md flex items-center justify-center gap-x-2
                         hover:bg-green-500 hover:cursor-pointer shadow-[0px_5px_12px_black]/80 lg:text-2xl transition-all duration-200">
-                            <span className="text-[1.5rem]"><IoLogoWhatsapp /></span>Contacto</button>
+                            <span className="text-[1.5rem]"><IoLogoWhatsapp /></span>Contacto</a>
                     </div>
                 </div>
                 <div className="bg-[#1d1d1d] w-70 h-auto rounded-t-lg shadow-[0px_0px_15px_black] rounded-lg md:w-100">
@@ -35,9 +36,9 @@ export const Clases = () =>{
                         <h3 className="bg-white px-3 text-black font-semibold rounded-lg text-lg lg:text-xl">Lautaro Sotelo</h3>
                     </div>
                     <div className="px-5 py-5">
-                        <button className="bg-green-600 w-full py-2 text-lg font-bold text-white rounded-md flex items-center justify-center gap-x-2
+                        <a href="https://www.instagram.com/lautyskt?igsh=MTF2NXQxZjBoYTFsMA==" className="bg-green-600 w-full py-2 text-lg font-bold text-white rounded-md flex items-center justify-center gap-x-2
                         hover:bg-green-500 hover:cursor-pointer shadow-[0px_5px_12px_black]/80 lg:text-2xl transition-all duration-200">
-                            <span className="text-[1.5rem]"><IoLogoWhatsapp /></span>Contacto</button>
+                            <span className="text-[1.5rem]"><FaSquareInstagram /></span>Contacto</a>
                     </div>
                 </div>
             </div>
