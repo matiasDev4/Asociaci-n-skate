@@ -40,8 +40,8 @@ export const Galeria = () =>{
                         translate-x-[${current * i}%]`}></button>))}
                 </div>
                 <h1 className="absolute top-0 text-lg bg-white px-5 py-1 rounded-xl m-2 font-title font-semibold">Compe 3ra Edicion</h1>
-                <a className="absolute left-22 bottom-14 bg-red-600/60 px-4  font-title  text-lg text-white py-1 rounded-sm
-                flex items-center gap-x-5" href="https://www.instagram.com/abruugallegos.ph">
+                <a className="absolute left-8 bottom-14 bg-red-600/60 px-4  font-title  text-lg text-white py-1 rounded-sm
+                flex items-center gap-x-5 lg:left-22" href="https://www.instagram.com/abruugallegos.ph">
                 <span><BsInstagram /></span> <span className="font-bold">abruugallegos.ph</span></a>
             </div>
 
@@ -70,8 +70,8 @@ export const Galeria = () =>{
                         translate-x-[${current2 * i}%]`}></button>))}
                 </div>
                 <h1 className="absolute top-0 text-lg bg-white px-5 py-1 rounded-xl m-2 font-title font-semibold">Compe 2da Edicion</h1>
-                <a className="absolute left-22 bottom-14 bg-red-600/60 px-4  font-title  text-lg text-white py-1 rounded-sm
-                flex items-center gap-x-5" href="https://www.instagram.com/nahu_ch.fotografia">
+                <a className="absolute left-8 bottom-14 bg-red-600/60 px-4  font-title  text-lg text-white py-1 rounded-sm
+                flex items-center gap-x-5 lg:left-22" href="https://www.instagram.com/nahu_ch.fotografia">
                 <span><BsInstagram /></span> <span className="font-bold">nahu_ch.fotografia</span></a>
             </div>
         </section>
