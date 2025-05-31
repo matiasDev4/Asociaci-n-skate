@@ -19,7 +19,7 @@ export const Header = () =>{
                     {Options.map(item=>
                         <li key={item.id} 
                         ><a href={item.link} className={`rounded-sm py-1 px-5 ${activeClick === item.id ? 'bg-red-600 w-full' : 'bg-transparent'} hover:bg-red-600
-                        hover:cursor-pointer w-50 block transition-all duration-200 lg:w-auto sm:text-lg lg:text-2xl`}
+                        hover:cursor-pointer w-50 block transition-all duration-200 lg:w-auto sm:text-lg lg:text-xl `}
                         onClick={(e)=>{
                             setActiveClick(e.target.text)
                             console.log(activeClick)

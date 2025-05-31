@@ -1,3 +1,4 @@
+@import "tailwindcss";
 
 @font-face {
     font-family: Bubes;
@@ -7,7 +8,7 @@
     font-family: Title;
     src: url("./fonts/FunnelSans-VariableFont_wght.ttf");
 }
-@import "tailwindcss";
+
 
 
 
@@ -16,4 +17,14 @@
 }
 @theme{
     --font-title: Title, "sans-serif"
+}
+
+@theme{
+    --animate-sponsor: sponsor 40s linear infinite;
+
+    @keyframes sponsor {
+    to {
+            transform: translateX(-50%);
+        }
+    }
 }
