@@ -13,7 +13,7 @@ export const ViewImages = ({images, indexImage, setOpen}) =>{
     
     return (
         <div className="bg-black/90 fixed top-0 left-0 bottom-0 right-0 flex justify-center items-center z-99 w-full h-auto">
-                    <div className="w-[320px] h-[800px] lg:w-[500px] lg:h-[800px] overflow-hidden relative shadow-[0px_0px_15px_black/50] rounded-xl "
+                    <div className="w-[320px] h-[900px] lg:w-[500px] lg:h-[800px] overflow-hidden relative shadow-[0px_0px_15px_black/50] rounded-xl "
                     >
                         <div className="flex transition-transform ease-out duration-500 h-full relative"
                         style={{transform: `translateX(-${current*100}%)`}}>

@@ -232,7 +232,7 @@ export const sponsors = [
         {
         'name':'16.png',
         'url':'sponsors/16.png',
-        'link':'https://www.instagram.com/fraganciasemily/'
+        'link':'http://wa.me/+5492224546567'
 
     },
         {

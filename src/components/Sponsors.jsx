@@ -8,13 +8,13 @@ export const Sponsors = () =>{
                 {sponsors.map(item=>
                     <a href={item.link}>
                         <img src={item.url} alt={item.name} 
-                        className="w-25"/>
+                        className="w-30"/>
                     </a>
                 )}
                 {sponsors.map(item=>
                     <a href={item.link}>
                         <img src={item.url} alt={item.name} 
-                        className="w-25"/>
+                        className="w-30"/>
                     </a>
                 )}
             </div>
