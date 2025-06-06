@@ -17,7 +17,7 @@ export const Collage = ({setOpenView, setIndexImage}) =>{
 
 
     return(
-        <div className="columns-1 sm:columns-3 lg:columns-2 py-10 md:py-20 gap-4 transition-all duration-200">
+        <div className="columns-1 sm:columns-3 lg:columns-2 py-10 md:py-20 gap-4 transition-all duration-200 mx-2">
             {imagenesRandom.map((item, index) =>(
                 <div key={index} className="mb-4 break-inside-avoid ">
                     <div className="relative">
@@ -28,9 +28,12 @@ export const Collage = ({setOpenView, setIndexImage}) =>{
                             setIndexImage(index)
                         }}/> 
                         <span
-                        className="absolute text-white bg-red-500/80 top-2 left-2 px-2 py-1 rounded-sm font-semibold font-title"><a href={item.instagram}
-                        className="flex items-center gap-x-2"
+                        className="absolute text-white bg-red-500/80 top-2 left-2 px-1 py-1 rounded-sm font-semibold font-title"><a href={item.instagram}
+                        className="flex items-center gap-x-2 text-sm"
                         ><BsInstagram/>{item.author}</a></span>
+                        <span>
+
+                        </span>
                     </div>
                 </div>
             ))}

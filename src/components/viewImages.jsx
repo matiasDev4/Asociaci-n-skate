@@ -13,18 +13,18 @@ export const ViewImages = ({images, indexImage, setOpen}) =>{
     
     return (
         <div className="bg-black/90 fixed top-0 left-0 bottom-0 right-0 flex justify-center items-center z-99 w-full h-auto">
-                    <div className="w-[320px] h-[900px] lg:w-[500px] lg:h-[800px] overflow-hidden relative shadow-[0px_0px_15px_black/50] rounded-xl "
+                    <div className="w-[320px] h-[900px] lg:w-[500px] lg:h-[900px] overflow-hidden relative shadow-[0px_0px_15px_black/50] rounded-xl "
                     >
-                        <div className="flex transition-transform ease-out duration-500 h-full relative"
+                        <div className="flex transition-transform ease-out duration-500 h-full w-full relative"
                         style={{transform: `translateX(-${current*100}%)`}}>
                             {image.map(item => 
                                 <>
-                                    <img key={item.url} src={item.url} alt="" className="w-full h-full object-contain relative <-5"/>
+                                    <img key={item.url} src={item.url} alt="" className="w-full h-full object-contain"/>
                                 </>
                                  
                             )}
                         </div>
-                        <div className="absolute flex items-center justify-between inset-0 w-full px-4 -z-0">
+                        <div className="absolute flex items-center justify-between inset-0 w-full px-4 ">
                             <button className="bg-white/50 text-xl p-2 rounded-full hover:cursor-pointer hover:bg-white/80 transition-colors duration-300"
                             onClick={anterior}>
                                 <FaArrowLeft />

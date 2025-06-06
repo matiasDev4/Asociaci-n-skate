@@ -3,7 +3,8 @@ export const imagenes = [
     'name': 'DSC_1',
     'url': 'compe/DSC_1.jpg',
     'author': 'haunthumans',
-    'instagram':'https://www.instagram.com/haunthumans'
+    'instagram':'https://www.instagram.com/haunthumans',
+    'ediciones': ['Compe 3ra edicion', 'Compe 2da edicion']
 },
 {
     'name': 'DSC_2',
@@ -136,6 +137,54 @@ export const imagenes = [
     'url': 'compe/DSC_23.jpg',
     'author': 'abruugallegos.ph',
     'instagram':'https://www.instagram.com/abruugallegos.ph'
+},
+{
+    'name': 'DSC_24',
+    'url': 'compe/DSC_24.jpg',
+    'author': 'asociacionsanvicentinadeskate',
+    'instagram':'https://www.instagram.com/asociacionsanvicentinadeskate/'
+},
+{
+    'name': 'DSC_25',
+    'url': 'compe/DSC_25.jpg',
+    'author': 'asociacionsanvicentinadeskate',
+    'instagram':'https://www.instagram.com/asociacionsanvicentinadeskate/'
+},
+{
+    'name': 'DSC_26',
+    'url': 'compe/DSC_26.jpg',
+    'author': 'asociacionsanvicentinadeskate',
+    'instagram':'https://www.instagram.com/asociacionsanvicentinadeskate/'
+},
+{
+    'name': 'DSC_27',
+    'url': 'compe/DSC_27.jpg',
+    'author': 'asociacionsanvicentinadeskate',
+    'instagram':'https://www.instagram.com/asociacionsanvicentinadeskate/'
+},
+{
+    'name': 'DSC_28',
+    'url': 'compe/DSC_28.jpg',
+    'author': 'asociacionsanvicentinadeskate',
+    'instagram':'https://www.instagram.com/asociacionsanvicentinadeskate/'
+},
+{
+    'name': 'DSC_29',
+    'url': 'compe/DSC_29.jpg',
+    'author': 'asociacionsanvicentinadeskate',
+    'instagram':'https://www.instagram.com/asociacionsanvicentinadeskate/'
+},
+{
+    'name': 'DSC_30',
+    'url': 'compe/DSC_30.jpg',
+    'author': 'asociacionsanvicentinadeskate',
+    'instagram':'https://www.instagram.com/asociacionsanvicentinadeskate/'
+},
+{
+    'name': 'DSC_31',
+    'url': 'compe/DSC_31.jpg',
+    'author': 'asociacionsanvicentinadeskate',
+    'instagram':'https://www.instagram.com/asociacionsanvicentinadeskate/'
 },
 ]
 export const sponsors = [
