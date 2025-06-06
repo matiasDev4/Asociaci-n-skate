@@ -1,4 +1,4 @@
-import { imagenesCompe2, sponsors } from "../config/galeria"
+import { sponsors } from "../config/galeria"
 
 export const Sponsors = () =>{
     return (

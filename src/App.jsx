@@ -10,8 +10,26 @@ import { Nosotros } from "./components/Nosotros"
 import { Sponsors } from "./components/Sponsors"
 import { BsInstagram } from "react-icons/bs";
 import { VideoPark } from "./components/VideoPark"
+import { Collage } from "./components/Collage"
+import { ViewImages } from "./components/viewImages"
+import { useEffect, useState } from "react"
+import { imagenes } from "./config/galeria"
 
 export const App = () =>{
+    const [openView, setOpenView] = useState(false)
+    const [indexImage, setIndexImage] = useState(0)
+    useEffect(() => {
+        if (openView) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
+        // Limpieza en caso de error o desmontaje
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [openView]);
     return (
         <section className="w-full h-full">
             <Header />
@@ -20,25 +38,10 @@ export const App = () =>{
             <Nosotros />
             <Clases />
             <Competencias />
-            <div className="text-white max-w-50 lg:max-w-[700px] mx-auto text-center my-10">
-                <h1 className="text-2xl font-title font-bold my-5 text-center">Fotografos</h1>
-                <ul className="flex flex-col gap-y-4 justify-center lg:flex-row lg:gap-x-4 lg:justify-evenly [&>a]:px-2">
-                    <a href="https://www.instagram.com/nahu_ch.fotografia"
-                    className="bg-red-500/80 w-50 py-1 flex items-center justify-center gap-x-2 font-title rounded-sm">
-                    <span><BsInstagram /></span>nahu_ch.fotografia</a>
-                    <a href="https://www.instagram.com/abruugallegos.ph"
-                    className="bg-red-500/80 w-50 py-1 flex items-center justify-center gap-x-2 font-title rounded-sm">
-                    <span><BsInstagram /></span>abruugallegos.ph</a>
-                    <a href="https://www.instagram.com/haunthumans"
-                    className="bg-red-500/80 w-50 py-1 flex items-center justify-center gap-x-2 font-title rounded-sm">
-                    <span><BsInstagram /></span>haunthumans</a>
-                    <a href="https://www.instagram.com/mebsk8"
-                    className="bg-red-500/80 w-50 py-1 flex items-center justify-center gap-x-2 font-title rounded-sm">
-                    <span><BsInstagram /></span>mebsk8</a>
-                </ul>
-                
+            <div className="max-w-[300px] md:max-w-[900px] mx-auto my-10 ">
+                <Collage setOpenView={setOpenView} setIndexImage={setIndexImage}/>
             </div>
-            <Galeria />
+            {openView ? <ViewImages images={imagenes} indexImage={indexImage} setOpen={setOpenView}/> : ''}
             <VideoPark />
             <ComoLlegar />
             <Beneficios />

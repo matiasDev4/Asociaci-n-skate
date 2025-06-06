@@ -1,0 +1,39 @@
+import { useEffect, useState } from "react";
+import { imagenes } from "../config/galeria"
+import { BsInstagram } from "react-icons/bs";
+export const Collage = ({setOpenView, setIndexImage}) =>{
+    const [imagenesRandom, setImagenesRandom] = useState([])
+
+    useEffect(()=>{
+        const random = () =>{
+            const mezcla = imagenes.sort(()=>Math.random() - 0.5).slice(0,4)
+            setImagenesRandom(mezcla)
+        }
+        random()
+
+        const interval = setInterval(random, 60000)
+        return () => clearInterval(interval)
+    },[])
+
+
+    return(
+        <div className="columns-1 sm:columns-3 lg:columns-2 py-10 md:py-20 gap-4 transition-all duration-200">
+            {imagenesRandom.map((item, index) =>(
+                <div key={index} className="mb-4 break-inside-avoid ">
+                    <div className="relative">
+                        <img src={item.url} alt={item.name} 
+                        className="w-full object-cover rounded-lg"
+                        onClick={()=>{
+                            setOpenView(true)
+                            setIndexImage(index)
+                        }}/> 
+                        <span
+                        className="absolute text-white bg-red-500/80 top-2 left-2 px-2 py-1 rounded-sm font-semibold font-title"><a href={item.instagram}
+                        className="flex items-center gap-x-2"
+                        ><BsInstagram/>{item.author}</a></span>
+                    </div>
+                </div>
+            ))}
+        </div>
+    )
+}
