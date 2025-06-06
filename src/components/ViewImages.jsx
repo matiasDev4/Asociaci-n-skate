@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { BsInstagram } from "react-icons/bs";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
