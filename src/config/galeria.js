@@ -139,12 +139,7 @@ export const imagenes = [
 },
 ]
 export const sponsors = [
-    {
-        'name':'1.png',
-        'url':'sponsors/1.png',
-        'link':'https://www.instagram.com/sanvicentemunicipio/'
 
-    },
         {
         'name':'2.png',
         'url':'sponsors/2.png',
@@ -233,12 +228,6 @@ export const sponsors = [
         'name':'16.png',
         'url':'sponsors/16.png',
         'link':'http://wa.me/+5492224546567'
-
-    },
-        {
-        'name':'17.png',
-        'url':'sponsors/17.png',
-        'link':'https://www.instagram.com/asociacionsanvicentinadeskate/'
 
     },
         {

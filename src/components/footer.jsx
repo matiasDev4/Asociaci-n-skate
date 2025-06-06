@@ -4,6 +4,11 @@ export const Footer = () =>{
             <h1 className="text-5xl text-center font-bubes uppercase font-bold text-amber-400 lg:text-7xl scroll-mt-30" id="Contacto">
                 <span className="text-white">ASOCIACION SANVICENTINA DE</span> SKATEBOARD</h1>
             <h3 className="text-5xl text-center font-bubes uppercase font-bold text-white lg:text-7xl py-4">SANVI PARK</h3>
+            <div className="flex items-center justify-around
+            [&>img]:w-40 lg:w-[400px] w-[320px] gap-x-5 mx-auto">
+                <img src="sponsors/1.png" alt="municipalidad" />
+                <img src="sponsors/17.png" alt="municipalidad" />
+            </div>
             <h3 className="text-center font-bold text-lg">M. Ugarte y AV. Sarmiento</h3>
             <h4 className="text-center font-semibold text-md">San Vicente (Frente la vieja estacion)</h4>
             <div className="py-4">
