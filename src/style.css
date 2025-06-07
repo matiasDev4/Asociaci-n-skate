@@ -28,3 +28,15 @@
         }
     }
 }
+
+@theme{
+    --animate-edicion: edicion 2s ease-in-out forwards;
+    @keyframes edicion {
+        to{
+            transform: translateX(100%)
+        },
+        100%{
+            transform: translateX(-0%)
+        }
+    }
+}

@@ -43,7 +43,7 @@ export const ViewImages = ({images, indexImage, setOpen}) =>{
                     </div>
 
                     <div className="text-white absolute text-2xl bg-red-500 top-4 right-5 p-1 rounded-full
-                    hover:cursor-pointer">
+                    hover:cursor-pointer ">
                         <span
                         onClick={()=>{setOpen(false)}}><RxCross2 /></span>
                     </div>
