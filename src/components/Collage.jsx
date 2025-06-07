@@ -17,7 +17,9 @@ export const Collage = ({setOpenView, setIndexImage}) =>{
 
 
     return(
-        <div className="columns-1 sm:columns-3 lg:columns-2 py-10 md:py-20 gap-4 transition-all duration-200 mx-2">
+        <div className="columns-1 sm:columns-3 lg:columns-3 py-10 md:py-20 gap-4 transition-all duration-200 mx-2">
+            <img src="image/sanvipark.png" alt="park" className="rounded-xl h-75 w-full object-cover mb-5
+            shadow-[0px_0px_25px_white]/4"/>
             {imagenesRandom.map((item, index) =>(
                 <div key={index} className="mb-4 break-inside-avoid ">
                     <div className="relative  overflow-hidden">
@@ -38,6 +40,7 @@ export const Collage = ({setOpenView, setIndexImage}) =>{
                     </div>
                 </div>
             ))}
+            
         </div>
     )
 }
